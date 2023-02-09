@@ -1,0 +1,68 @@
+.app__billing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 100px;
+  gap: 200px;
+  margin-top: 100px;
+  color: white;
+}
+
+.app__billing-bill,
+.app__billing__info {
+  /* text-align: center; */
+  flex: 1;
+}
+.app__billing__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-family);
+}
+
+.app__billing__info h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+.app__billing__info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__billing__info div {
+  display: flex;
+  gap: 20px;
+}
+
+.app__billing-bill img {
+  width: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 1080px) {
+  .app__billing {
+    justify-content: center;
+    gap: 50px;
+  }
+  .app__billing__info {
+    text-align: center;
+    gap: 40px;
+  }
+  .app__billing__info div {
+    justify-content: center;
+  }
+  .app__billing-bill img {
+    min-width: 300px;
+  }
+}
