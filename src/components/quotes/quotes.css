@@ -1,0 +1,106 @@
+.app__quotes {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: var(--font-family);
+  gap: 100px;
+  padding: 0 100px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+.app__quotes__header,
+.app__quotes-container {
+  gap: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__quotes__header {
+  gap: 100px;
+}
+.app__quotes__header h1 {
+  flex: 1;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 170%;
+  color: #ffffff;
+}
+.app__quotes__header p {
+  flex: 1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__quotes-container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 100px;
+  padding: 40px;
+}
+
+.app__quotes-container-card__profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app__quotes-container-card__profile img {
+  width: 58px;
+  height: 58px;
+}
+
+.app__quotes-container-card__profile div h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.app__quotes-container-card__profile div span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+.selected {
+  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .app__quotes__header {
+    gap: 0;
+  }
+  .app__quotes__header h1,
+  .app__quotes__header p {
+    text-align: center;
+    flex: auto;
+  }
+
+  .app__quotes-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app__quotes {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app__quotes-container-card {
+    padding: 40px 25px;
+    width: 270px;
+  }
+}
