@@ -5,5 +5,6 @@ import Business from "./business/Business";
 import Billing from "./billing/Billing";
 import Card from "./card/Card";
 import Quotes from "./quotes/Quotes";
+import Brands from "./brands/Brands";
 
-export { Navbar, Header, Data, Business, Billing, Card, Quotes };
+export { Navbar, Header, Data, Business, Billing, Card, Quotes, Brands };

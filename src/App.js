@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Header, Data, Business, Billing, Card, Quotes } from "./components";
+import { Navbar, Header, Data, Business, Billing, Card, Quotes, Brands } from "./components";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Billing />
       <Card />
       <Quotes />
+      <Brands />
     </div>
   );
 }
