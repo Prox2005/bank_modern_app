@@ -3,5 +3,6 @@ import Header from "./header/Header";
 import Data from "./data/Data";
 import Business from "./business/Business";
 import Billing from "./billing/Billing";
+import Card from "./card/Card";
 
-export { Navbar, Header, Data, Business, Billing };
+export { Navbar, Header, Data, Business, Billing, Card };

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Header, Data, Business, Billing } from "./components";
+import { Navbar, Header, Data, Business, Billing, Card } from "./components";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Data />
       <Business />
       <Billing />
+      <Card />
     </div>
   );
 }

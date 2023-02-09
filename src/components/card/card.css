@@ -1,0 +1,80 @@
+.app__card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 200px;
+  padding: 0 100px;
+}
+
+.app__card-info,
+.app__card-pay {
+  color: white;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+
+.app__card-info h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.app__card-info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__card-info button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 20px;
+  padding: 20px 40px;
+  background: var(--bg-gradient);
+  border: none;
+  color: #00040e;
+}
+
+.app__card-pay img {
+  width: 100%;
+  min-width: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1050px) {
+  .app__card-info p {
+    font-size: 16px;
+  }
+  .app__card-info,
+  .app__card-pay {
+    text-align: center;
+    align-items: center;
+    flex: auto;
+  }
+  .app__card-pay img {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__card-pay img {
+    min-width: 150px;
+  }
+  .app__card {
+    padding: 0 30px;
+  }
+}
