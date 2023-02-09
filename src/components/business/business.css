@@ -1,0 +1,100 @@
+.app__business {
+  display: flex;
+  margin-top: 100px;
+  color: white;
+  padding: 0 100px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.app__business__start,
+.app__business__benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-family: var(--font-family);
+  gap: 20px;
+  flex: 1;
+}
+
+.app__business__start h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+}
+
+.app__business__start p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__business__start button {
+  outline: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 150%;
+  color: #00040e;
+  margin-top: 20px;
+  padding: 20px 40px;
+  background: var(--bg-gradient);
+  border: none;
+}
+
+.app__business__benefits-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 40px;
+}
+
+.app__business__benefits-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  background: var(--selected-gradient);
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  border-radius: 20px;
+}
+
+.app__business__benefits-info h2 {
+  margin: 0;
+}
+
+.app__business__benefits-info img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  padding: 0 20px;
+  text-align: center;
+  background: rgba(9, 151, 124, 0.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .app__business__benefits-info p {
+    font-size: 14px;
+  }
+  .app__business__start {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__business {
+    padding: 10px 20px;
+  }
+
+  .app__business__benefits-info h2 {
+    text-align: start;
+  }
+}
