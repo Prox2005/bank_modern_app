@@ -21,4 +21,5 @@
     #33bbcf 90.29%
   );
   --selected-gradient: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
+  --bg-linear-gr: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
