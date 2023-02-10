@@ -8,8 +8,12 @@
 
 .app__header-content,
 .app__header-image {
-  width: 50%;
   max-width: 600px;
+}
+
+.app__header-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .app__header-content_discount {
@@ -40,6 +44,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  border: none;
 }
 
 .app__header-content p {
@@ -58,10 +63,7 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  .app__header-content h1 {
-    font-size: 52px;
-  }
+@media screen and (max-width: 1200px) {
   .app__header-content p {
     text-align: start;
     font-size: 16px;
@@ -72,31 +74,27 @@
   .app__header-content h1 {
     font-size: 42px;
   }
-  .app__header-content p {
-    text-align: start;
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 800px) {
   .app__header {
     justify-content: space-around;
-    padding: 0 60px;
+    padding: 0 40px;
   }
 }
 
 @media screen and (max-width: 610px) {
   .app__header {
+    gap: 80px;
     margin: 0;
     flex-direction: column;
-    padding: 0;
+  }
+
+  .app__header-content {
+    align-items: center;
   }
   .app__header-content p,
   .app__header-content h1 {
     text-align: center;
-  }
-
-  .app__header-content h1 {
-    font-size: 36px;
   }
 }

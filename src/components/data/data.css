@@ -40,15 +40,15 @@
 }
 
 @media screen and (max-width: 795px) {
+  .app__data {
+    gap: 50px;
+  }
   .app__data span {
     display: none;
   }
 
   .app__data__info {
     margin-right: 40px;
-  }
-  .app__data__info h2 {
-    font-size: 20px;
   }
 }
 
