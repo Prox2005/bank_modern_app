@@ -9,6 +9,7 @@ import {
   Quotes,
   Brands,
   Service,
+  Footer,
 } from "./components";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Quotes />
       <Brands />
       <Service />
+      <Footer />
     </div>
   );
 }

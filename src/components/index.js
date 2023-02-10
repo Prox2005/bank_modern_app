@@ -7,4 +7,6 @@ import Card from "./card/Card";
 import Quotes from "./quotes/Quotes";
 import Brands from "./brands/Brands";
 import Service from "./service/Service";
-export { Navbar, Header, Data, Business, Billing, Card, Quotes, Brands, Service };
+import Footer from "./footer/Footer";
+
+export { Navbar, Header, Data, Business, Billing, Card, Quotes, Brands, Service, Footer };

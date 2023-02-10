@@ -1,0 +1,93 @@
+.app__footer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 0 0;
+  background: rgba(11, 10, 12, 0.6);
+  color: white;
+  font-family: var(--font-family);
+}
+
+.app__footer__hoobank {
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 50px 0 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.app__footer__hoobank-info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__footer__hoobank__other {
+  gap: 50px;
+  flex-wrap: wrap;
+  flex: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.app__footer__hoobank__other h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.app__footer__hoobank__other h3 {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app__footer__hoobank__other {
+  display: flex;
+}
+
+.app__footer__end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 50px 0 50px;
+}
+.app__footer__end p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.app__footer__end-media {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.app__footer__end-media img {
+  cursor: pointer;
+}
+
+span {
+  margin: 20px auto;
+  width: 95%;
+  border: 1px solid #3f3e45;
+}
+
+@media screen and (max-width: 750px) {
+  .app__footer__end-media {
+    justify-content: center;
+  }
+  .app__footer__end-copyright {
+    flex: auto;
+  }
+}
